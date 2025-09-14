@@ -1,0 +1,15 @@
+.list-filter {
+    & button {
+        padding: 0.8rem;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FEF7EE;
+        background-color: transparent;   
+        border: none;
+        border-radius: 0.5rem;
+    }
+
+    & button.active {
+        background-color: #4D5562;
+    }
+}

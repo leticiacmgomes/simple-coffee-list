@@ -1,0 +1,55 @@
+:root{
+    --vector: url('./assets/resources/vector.svg');
+    --bg-desktop: url('./assets/resources/bg-cafe-lg.jpg');
+    --bg-mobile: url('./assets/resources/bg-cafe-sm.jpg');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    padding: 3rem 0;
+    background-color: #111315;
+    background-image: var(--bg-mobile);
+    background-repeat: no-repeat;
+    background-position: top center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+
+.App {
+    justify-self: center;
+    background-color: #1B1D1F;
+    background-image: var(--vector);
+    background-repeat: no-repeat;
+    background-position: top right;
+    width: 85%;
+    max-width: 900px;
+    padding: 3rem 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    & h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: #FEF7EE;
+    }
+
+    & p {
+        max-width: 400px;
+        font-size: 16px;
+        color: #6F757C;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-image: var(--bg-desktop);
+    }
+}
