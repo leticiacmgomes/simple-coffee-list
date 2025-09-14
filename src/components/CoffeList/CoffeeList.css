@@ -8,3 +8,11 @@
         gap: 1.5rem;
     }
 }
+
+@media (min-width: 1350px) {
+    .coffee-list {
+        & ul {
+            gap: 2rem;
+        }
+    }
+}
